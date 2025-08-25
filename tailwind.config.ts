@@ -52,21 +52,50 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
+				// Neon colors for Snartian theme
+				neon: {
+					cyan: 'hsl(var(--neon-cyan))',
+					purple: 'hsl(var(--neon-purple))',
+					pink: 'hsl(var(--neon-pink))',
+					green: 'hsl(var(--neon-green))',
+					amber: 'hsl(var(--neon-amber))',
+					blue: 'hsl(var(--neon-blue))'
 				}
+			},
+			backgroundImage: {
+				'gradient-primary': 'var(--gradient-primary)',
+				'gradient-secondary': 'var(--gradient-secondary)',
+				'gradient-accent': 'var(--gradient-accent)',
+				'gradient-holographic': 'var(--gradient-holographic)'
+			},
+			boxShadow: {
+				'neon': 'var(--shadow-neon)',
+				'neon-strong': 'var(--shadow-neon-strong)',
+				'purple': 'var(--shadow-purple)',
+				'ambient': 'var(--shadow-ambient)'
+			},
+			fontFamily: {
+				'heading': 'var(--font-heading)',
+				'body': 'var(--font-body)',
+				'orbitron': ['Orbitron', 'monospace'],
+				'inter': ['Inter', 'sans-serif']
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
-				sm: 'calc(var(--radius) - 4px)'
+				sm: 'calc(var(--radius) - 4px)',
+				'xl': 'var(--radius-lg)',
+				'2xl': 'var(--radius-xl)'
+			},
+			animation: {
+				'accordion-down': 'accordion-down 0.2s ease-out',
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 6s ease-in-out infinite',
+				'pulse-neon': 'pulse-neon 2s ease-in-out infinite alternate',
+				'glow': 'glow 2s ease-in-out infinite alternate',
+				'shimmer': 'shimmer 3s ease-in-out infinite',
+				'spin-slow': 'spin 8s linear infinite',
+				'bounce-gentle': 'bounce-gentle 3s ease-in-out infinite'
 			},
 			keyframes: {
 				'accordion-down': {
@@ -84,11 +113,49 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'float': {
+					'0%, 100%': {
+						transform: 'translateY(0px)'
+					},
+					'50%': {
+						transform: 'translateY(-20px)'
+					}
+				},
+				'pulse-neon': {
+					'0%': {
+						'box-shadow': '0 0 5px hsl(195, 100%, 50%), 0 0 10px hsl(195, 100%, 50%), 0 0 15px hsl(195, 100%, 50%)'
+					},
+					'100%': {
+						'box-shadow': '0 0 10px hsl(195, 100%, 50%), 0 0 20px hsl(195, 100%, 50%), 0 0 30px hsl(195, 100%, 50%)'
+					}
+				},
+				'glow': {
+					'0%': {
+						'text-shadow': '0 0 5px hsl(195, 100%, 50%), 0 0 10px hsl(195, 100%, 50%)'
+					},
+					'100%': {
+						'text-shadow': '0 0 10px hsl(195, 100%, 50%), 0 0 20px hsl(195, 100%, 50%), 0 0 30px hsl(195, 100%, 50%)'
+					}
+				},
+				'shimmer': {
+					'0%': {
+						'background-position': '-200% 0'
+					},
+					'100%': {
+						'background-position': '200% 0'
+					}
+				},
+				'bounce-gentle': {
+					'0%, 100%': {
+						transform: 'translateY(0px)',
+						'animation-timing-function': 'cubic-bezier(0.8, 0, 1, 1)'
+					},
+					'50%': {
+						transform: 'translateY(-5px)',
+						'animation-timing-function': 'cubic-bezier(0, 0, 0.2, 1)'
+					}
 				}
-			},
-			animation: {
-				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
 			}
 		}
 	},
