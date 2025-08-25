@@ -1,73 +1,89 @@
-# Welcome to your Lovable project
+# Coders-Dabha
 
-## Project info
+> A modern, Vite + React + TypeScript starter for a futuristic restaurant / demo site — forked from `smartian-vision` and scaffolded with Lovable.  
+> Live demo: https://coders-dabha.vercel.app
 
-**URL**: https://lovable.dev/projects/4d79dac1-40d4-4533-bb65-0b6e9f0dbe53
+---
 
-## How can I edit this code?
+## Table of contents
 
-There are several ways of editing your application.
+- [About](#about)  
+- [Features](#features)  
+- [Tech Stack](#tech-stack)  
+- [Screenshots / Demo](#screenshots--demo)  
+- [Getting Started](#getting-started)  
+  - [Prerequisites](#prerequisites)  
+  - [Install](#install)  
+  - [Run (dev)](#run-dev)  
+  - [Build](#build)  
+  - [Preview production build](#preview-production-build)  
+- [Deployment](#deployment)  
+  - [Vercel](#vercel)  
+  - [Lovable](#lovable)  
+  - [Firebase Hosting](#firebase-hosting)  
+- [Folder structure](#folder-structure)  
+- [Contributing](#contributing)  
+- [Environment variables](#environment-variables)  
+- [License](#license)  
+- [Contact](#contact)
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/4d79dac1-40d4-4533-bb65-0b6e9f0dbe53) and start prompting.
+## About
 
-Changes made via Lovable will be committed automatically to this repo.
+**Coders-Dabha** is a polished front-end starter scaffold using Vite, React (TypeScript), Tailwind CSS and shadcn UI — intended as a base for a futuristic restaurant website. This repo was created with Lovable and can be further enhanced with 3D scenes (React Three Fiber), Anime.js animations, or connected to Firebase for data.
 
-**Use your preferred IDE**
+---
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Features
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- Vite + React + TypeScript starter  
+- Tailwind CSS + shadcn UI components  
+- Fast dev experience (HMR)  
+- Production-ready build configuration  
+- Example pages and components scaffolded by Lovable  
+- Deployable to Vercel, Lovable, Firebase or similar platforms  
 
-Follow these steps:
+> Tip: This repo is ideal for adding advanced features like React Three Fiber scenes, Anime.js transitions, and Firebase-backed menus/reservations.
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## Tech Stack
 
-# Step 3: Install the necessary dependencies.
-npm i
+- Frontend: React + TypeScript  
+- Build tool: Vite  
+- Styling: Tailwind CSS  
+- UI primitives: shadcn-ui (optional)  
+- Optional: React Three Fiber (`@react-three/fiber`) + `@react-three/drei` for 3D; Anime.js for DOM animation  
+- Deployment: Vercel / Lovable / Firebase  
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+---
 
-**Edit a file directly in GitHub**
+## Screenshots / Demo
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Live demo: https://coders-dabha.vercel.app
 
-**Use GitHub Codespaces**
+(Replace with actual screenshots or GIFs inside `/public` or link images here.)
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
-## What technologies are used for this project?
+## Getting Started
 
-This project is built with:
+### Prerequisites
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- Node.js (recommended: 18.x or later)  
+- npm or pnpm or yarn  
+- (Optional) Git
 
-## How can I deploy this project?
+### Install
 
-Simply open [Lovable](https://lovable.dev/projects/4d79dac1-40d4-4533-bb65-0b6e9f0dbe53) and click on Share -> Publish.
+```bash
+# clone this repository (replace <YOUR_GIT_URL> if needed)
+git clone https://github.com/Vaibhav-0111/Coders-Dabha.git
+cd Coders-Dabha
 
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+# install dependencies
+npm install
+# or
+# pnpm install
+# yarn
