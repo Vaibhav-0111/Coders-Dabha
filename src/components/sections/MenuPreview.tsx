@@ -22,34 +22,34 @@ const MenuPreview = () => {
   const featuredItems: MenuItem[] = [
     {
       id: '1',
-      name: 'Quantum Sashimi',
-      description: 'Molecularly enhanced tuna with neon algae reduction and holographic garnish',
-      price: 85,
-      category: 'Signature',
+      name: 'Debug Biryani',
+      description: 'Fragrant basmati rice with tender lamb, aromatic spices, and perfectly timed layers - no bugs here!',
+      price: 18,
+      category: 'Main Course',
       image: '/api/placeholder/400/300',
       rating: 4.9,
-      prepTime: '15 min',
+      prepTime: '25 min',
       isSignature: true
     },
     {
       id: '2',
-      name: 'Neural Network Noodles',
-      description: 'AI-optimized ramen with bio-luminescent broth and memory foam eggs',
-      price: 45,
-      category: 'Mains',
+      name: 'Async Butter Chicken',
+      description: 'Creamy tomato curry that processes in parallel with fluffy naan - perfectly non-blocking comfort food',
+      price: 16,
+      category: 'Main Course', 
       image: '/api/placeholder/400/300',
       rating: 4.8,
-      prepTime: '12 min'
+      prepTime: '20 min'
     },
     {
       id: '3',
-      name: 'Cyber Chocolate Sphere',
-      description: 'Interactive dessert that transforms as you eat, with augmented reality layers',
-      price: 35,
-      category: 'Desserts',
+      name: 'Chai.js (Masala Chai)',
+      description: 'Unit-tested blend of traditional spices and black tea - guaranteed to pass all your energy tests',
+      price: 4,
+      category: 'Beverages',
       image: '/api/placeholder/400/300',
       rating: 5.0,
-      prepTime: '8 min',
+      prepTime: '5 min',
       isSignature: true
     }
   ];
@@ -101,17 +101,17 @@ const MenuPreview = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <div className="flex items-center justify-center mb-6">
-            <ChefHat className="w-8 h-8 text-neon-cyan mr-3" />
-            <span className="text-neon-cyan font-medium text-lg">Featured Menu</span>
+            <ChefHat className="w-8 h-8 text-indian-saffron mr-3" />
+            <span className="text-indian-saffron font-medium text-lg">Featured Dishes</span>
           </div>
           
           <h2 className="text-5xl md:text-6xl font-heading font-bold mb-6 bg-gradient-primary bg-clip-text text-transparent">
-            Culinary Innovation
+            Tech-Spiced Menu
           </h2>
           
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Each dish is a masterpiece of molecular gastronomy, designed to challenge 
-            your senses and redefine your understanding of flavor.
+            Each dish is crafted with traditional Indian spices and techniques, 
+            designed to fuel your coding sessions and satisfy your taste buds.
           </p>
         </div>
 
@@ -121,21 +121,21 @@ const MenuPreview = () => {
             <div
               key={item.id}
               data-item={item.id}
-              className="menu-card group relative bg-card backdrop-blur-md rounded-2xl overflow-hidden border border-border hover:border-neon-cyan/50 transition-all duration-500 hover:shadow-neon transform-gpu perspective-1000"
+              className="menu-card group relative bg-card backdrop-blur-md rounded-2xl overflow-hidden border border-border hover:border-indian-saffron/50 transition-all duration-500 hover:shadow-warm transform-gpu perspective-1000"
               onMouseEnter={() => handleCardHover(item.id)}
               onMouseLeave={() => handleCardHover(null)}
             >
               {/* Signature Badge */}
               {item.isSignature && (
-                <div className="absolute top-4 right-4 z-10 bg-gradient-accent text-accent-foreground px-3 py-1 rounded-full text-sm font-bold animate-pulse-neon">
+                <div className="absolute top-4 right-4 z-10 bg-gradient-accent text-accent-foreground px-3 py-1 rounded-full text-sm font-bold animate-pulse-warm">
                   Signature
                 </div>
               )}
 
               {/* Image */}
-              <div className="relative h-48 bg-gradient-to-br from-neon-cyan/20 to-neon-purple/20 overflow-hidden">
+                <div className="relative h-48 bg-gradient-to-br from-indian-saffron/20 to-indian-green/20 overflow-hidden">
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <ChefHat className="w-16 h-16 text-neon-cyan/40" />
+                  <ChefHat className="w-16 h-16 text-indian-saffron/40" />
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-card/80 to-transparent"></div>
                 
@@ -144,7 +144,7 @@ const MenuPreview = () => {
                   {[...Array(5)].map((_, i) => (
                     <div
                       key={i}
-                      className={`absolute w-2 h-2 bg-neon-cyan/60 rounded-full animate-float`}
+                      className={`absolute w-2 h-2 bg-indian-saffron/60 rounded-full animate-float`}
                       style={{
                         left: `${20 + i * 15}%`,
                         top: `${30 + i * 10}%`,
@@ -158,10 +158,10 @@ const MenuPreview = () => {
               {/* Content */}
               <div className="p-6">
                 <div className="flex items-start justify-between mb-3">
-                  <h3 className="text-xl font-heading font-bold text-foreground group-hover:text-neon-cyan transition-colors">
+                  <h3 className="text-xl font-heading font-bold text-foreground group-hover:text-indian-saffron transition-colors">
                     {item.name}
                   </h3>
-                  <div className="text-2xl font-bold text-neon-amber">
+                  <div className="text-2xl font-bold text-indian-turmeric">
                     ${item.price}
                   </div>
                 </div>
@@ -172,7 +172,7 @@ const MenuPreview = () => {
 
                 {/* Stats */}
                 <div className="flex items-center space-x-4 mb-4 text-sm">
-                  <div className="flex items-center text-neon-amber">
+                  <div className="flex items-center text-indian-turmeric">
                     <Star className="w-4 h-4 mr-1 fill-current" />
                     <span className="font-medium">{item.rating}</span>
                   </div>
@@ -189,7 +189,7 @@ const MenuPreview = () => {
                 <div className={`transition-all duration-300 ${
                   hoveredItem === item.id ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
                 }`}>
-                  <button className="w-full py-2 bg-gradient-primary text-primary-foreground rounded-lg font-medium hover:shadow-neon-strong transition-all duration-300 flex items-center justify-center space-x-2">
+                  <button className="w-full py-2 bg-gradient-primary text-primary-foreground rounded-lg font-medium hover:shadow-warm-strong transition-all duration-300 flex items-center justify-center space-x-2">
                     <span>Order Now</span>
                     <ArrowRight className="w-4 h-4" />
                   </button>
@@ -206,7 +206,7 @@ const MenuPreview = () => {
         <div className="text-center">
           <Link
             to="/menu"
-            className="group inline-flex items-center space-x-3 px-8 py-4 bg-card border-2 border-neon-cyan text-neon-cyan rounded-xl font-semibold text-lg hover:bg-neon-cyan hover:text-background transition-all duration-300 hover:shadow-neon"
+            className="group inline-flex items-center space-x-3 px-8 py-4 bg-card border-2 border-indian-saffron text-indian-saffron rounded-xl font-semibold text-lg hover:bg-indian-saffron hover:text-background transition-all duration-300 hover:shadow-warm"
           >
             <span>View Full Menu</span>
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />

@@ -52,33 +52,33 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				// Neon colors for Snartian theme
-				neon: {
-					cyan: 'hsl(var(--neon-cyan))',
-					purple: 'hsl(var(--neon-purple))',
-					pink: 'hsl(var(--neon-pink))',
-					green: 'hsl(var(--neon-green))',
-					amber: 'hsl(var(--neon-amber))',
-					blue: 'hsl(var(--neon-blue))'
+				// Indian theme colors for Coders Dabha
+				indian: {
+					saffron: 'hsl(var(--saffron))',
+					orange: 'hsl(var(--deep-orange))',
+					green: 'hsl(var(--forest-green))',
+					turmeric: 'hsl(var(--turmeric))',
+					cardamom: 'hsl(var(--cardamom))',
+					paprika: 'hsl(var(--paprika))'
 				}
 			},
 			backgroundImage: {
 				'gradient-primary': 'var(--gradient-primary)',
 				'gradient-secondary': 'var(--gradient-secondary)',
 				'gradient-accent': 'var(--gradient-accent)',
-				'gradient-holographic': 'var(--gradient-holographic)'
+				'gradient-spice': 'var(--gradient-spice)'
 			},
 			boxShadow: {
-				'neon': 'var(--shadow-neon)',
-				'neon-strong': 'var(--shadow-neon-strong)',
-				'purple': 'var(--shadow-purple)',
+				'warm': 'var(--shadow-warm)',
+				'warm-strong': 'var(--shadow-warm-strong)',
+				'spice': 'var(--shadow-spice)',
 				'ambient': 'var(--shadow-ambient)'
 			},
 			fontFamily: {
 				'heading': 'var(--font-heading)',
 				'body': 'var(--font-body)',
-				'orbitron': ['Orbitron', 'monospace'],
-				'inter': ['Inter', 'sans-serif']
+				'poppins': ['Poppins', 'sans-serif'],
+				'mukti': ['Mukti', 'serif']
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -122,20 +122,20 @@ export default {
 						transform: 'translateY(-20px)'
 					}
 				},
-				'pulse-neon': {
+				'pulse-warm': {
 					'0%': {
-						'box-shadow': '0 0 5px hsl(195, 100%, 50%), 0 0 10px hsl(195, 100%, 50%), 0 0 15px hsl(195, 100%, 50%)'
+						'box-shadow': '0 0 5px hsl(25, 95%, 65%), 0 0 10px hsl(25, 95%, 65%), 0 0 15px hsl(25, 95%, 65%)'
 					},
 					'100%': {
-						'box-shadow': '0 0 10px hsl(195, 100%, 50%), 0 0 20px hsl(195, 100%, 50%), 0 0 30px hsl(195, 100%, 50%)'
+						'box-shadow': '0 0 10px hsl(25, 95%, 65%), 0 0 20px hsl(25, 95%, 65%), 0 0 30px hsl(25, 95%, 65%)'
 					}
 				},
 				'glow': {
 					'0%': {
-						'text-shadow': '0 0 5px hsl(195, 100%, 50%), 0 0 10px hsl(195, 100%, 50%)'
+						'text-shadow': '0 0 5px hsl(25, 95%, 65%), 0 0 10px hsl(25, 95%, 65%)'
 					},
 					'100%': {
-						'text-shadow': '0 0 10px hsl(195, 100%, 50%), 0 0 20px hsl(195, 100%, 50%), 0 0 30px hsl(195, 100%, 50%)'
+						'text-shadow': '0 0 10px hsl(25, 95%, 65%), 0 0 20px hsl(25, 95%, 65%), 0 0 30px hsl(25, 95%, 65%)'
 					}
 				},
 				'shimmer': {

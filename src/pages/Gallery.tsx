@@ -12,11 +12,11 @@ const Gallery = () => {
               Gallery
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-12">
-              Experience our restaurant through immersive 3D visuals
+              Experience our restaurant through beautiful visuals and virtual tour
             </p>
-            <div className="bg-card/50 backdrop-blur-md rounded-2xl p-12 border border-neon-purple/20">
+            <div className="bg-card/50 backdrop-blur-md rounded-2xl p-12 border border-indian-green/20">
               <p className="text-lg text-muted-foreground">
-                3D gallery carousel and virtual tour coming soon...
+                Interactive gallery with Indian restaurant ambiance coming soon...
               </p>
             </div>
           </div>

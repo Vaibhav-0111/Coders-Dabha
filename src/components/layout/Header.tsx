@@ -45,7 +45,7 @@ const Header = () => {
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled 
-          ? 'bg-background/90 backdrop-blur-md border-b border-neon-cyan/20 shadow-neon' 
+          ? 'bg-background/90 backdrop-blur-md border-b border-indian-saffron/20 shadow-warm' 
           : 'bg-transparent'
       }`}
     >
@@ -57,11 +57,11 @@ const Header = () => {
             className="flex items-center space-x-3 group"
           >
             <div className="relative">
-              <ChefHat className="w-8 h-8 text-neon-cyan group-hover:animate-pulse-neon transition-all" />
-              <div className="absolute inset-0 blur-md bg-neon-cyan/30 rounded-full animate-pulse"></div>
+              <ChefHat className="w-8 h-8 text-indian-saffron group-hover:animate-pulse-warm transition-all" />
+              <div className="absolute inset-0 blur-md bg-indian-saffron/30 rounded-full animate-pulse"></div>
             </div>
-            <span className="text-2xl font-heading font-bold text-foreground group-hover:text-neon-cyan transition-colors">
-              Snartian Bistro
+            <span className="text-2xl font-heading font-bold text-foreground group-hover:text-indian-saffron transition-colors">
+              Coders Dabha
             </span>
           </Link>
 
@@ -73,8 +73,8 @@ const Header = () => {
                 to={item.path}
                 className={`nav-item relative px-4 py-2 font-medium transition-all duration-300 ${
                   location.pathname === item.path
-                    ? 'text-neon-cyan'
-                    : 'text-foreground hover:text-neon-cyan'
+                    ? 'text-indian-saffron'
+                    : 'text-foreground hover:text-indian-saffron'
                 } group`}
               >
                 {item.name}
@@ -87,16 +87,16 @@ const Header = () => {
             {/* CTA Button */}
             <Link
               to="/reserve"
-              className="px-6 py-2 bg-gradient-primary text-primary-foreground rounded-lg font-medium hover:shadow-neon-strong transition-all duration-300 hover:scale-105"
+              className="px-6 py-2 bg-gradient-primary text-primary-foreground rounded-lg font-medium hover:shadow-warm-strong transition-all duration-300 hover:scale-105"
             >
-              Reserve Now
+              Book Table
             </Link>
           </div>
 
           {/* Mobile Menu Button */}
           <button
             onClick={toggleMenu}
-            className="md:hidden p-2 text-foreground hover:text-neon-cyan transition-colors"
+            className="md:hidden p-2 text-foreground hover:text-indian-saffron transition-colors"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -106,7 +106,7 @@ const Header = () => {
         <div className={`md:hidden transition-all duration-300 overflow-hidden ${
           isOpen ? 'max-h-96 mt-4' : 'max-h-0'
         }`}>
-          <div className="flex flex-col space-y-4 py-4 border-t border-neon-cyan/20">
+          <div className="flex flex-col space-y-4 py-4 border-t border-indian-saffron/20">
             {navItems.map((item) => (
               <Link
                 key={item.name}
@@ -114,8 +114,8 @@ const Header = () => {
                 onClick={() => setIsOpen(false)}
                 className={`px-4 py-2 font-medium transition-colors ${
                   location.pathname === item.path
-                    ? 'text-neon-cyan bg-neon-cyan/10'
-                    : 'text-foreground hover:text-neon-cyan hover:bg-neon-cyan/5'
+                    ? 'text-indian-saffron bg-indian-saffron/10'
+                    : 'text-foreground hover:text-indian-saffron hover:bg-indian-saffron/5'
                 } rounded-lg`}
               >
                 {item.name}
@@ -126,7 +126,7 @@ const Header = () => {
               onClick={() => setIsOpen(false)}
               className="px-6 py-2 bg-gradient-primary text-primary-foreground rounded-lg font-medium text-center"
             >
-              Reserve Now
+              Book Table
             </Link>
           </div>
         </div>

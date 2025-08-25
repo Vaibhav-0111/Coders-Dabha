@@ -23,17 +23,17 @@ const FloatingText = () => {
         <Text
           ref={meshRef}
           fontSize={1.5}
-          color="#00BFFF"
+          color="#FF8C42"
           anchorX="center"
           anchorY="middle"
         >
-          SNARTIAN
+          CODERS DABHA
           <meshStandardMaterial
-            color="#00BFFF"
-            emissive="#00BFFF"
+            color="#FF8C42"
+            emissive="#FF8C42"
             emissiveIntensity={0.3}
-            metalness={0.8}
-            roughness={0.2}
+            metalness={0.6}
+            roughness={0.3}
           />
         </Text>
       </Center>
@@ -73,7 +73,7 @@ const ParticleField = () => {
       </bufferGeometry>
       <pointsMaterial
         size={0.05}
-        color="#00BFFF"
+        color="#FF8C42"
         transparent
         opacity={0.6}
         sizeAttenuation={true}
@@ -90,8 +90,8 @@ const Hero3D = () => {
         gl={{ antialias: true, alpha: true }}
       >
         <ambientLight intensity={0.3} />
-        <pointLight position={[10, 10, 10]} intensity={1} color="#00BFFF" />
-        <pointLight position={[-10, -10, -10]} intensity={0.5} color="#9D4EDD" />
+        <pointLight position={[10, 10, 10]} intensity={1} color="#FF8C42" />
+        <pointLight position={[-10, -10, -10]} intensity={0.5} color="#228B22" />
         
         <Environment preset="night" />
         

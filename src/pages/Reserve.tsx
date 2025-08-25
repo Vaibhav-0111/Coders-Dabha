@@ -9,14 +9,14 @@ const Reserve = () => {
         <div className="container mx-auto px-6 py-16">
           <div className="text-center">
             <h1 className="text-5xl md:text-7xl font-heading font-bold mb-6 bg-gradient-accent bg-clip-text text-transparent">
-              Reserve Table
+              Book Your Table
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-12">
-              Book your experience at the future of fine dining
+              Reserve your spot at Coders Dabha - where great code meets great food
             </p>
-            <div className="bg-card/50 backdrop-blur-md rounded-2xl p-12 border border-neon-amber/20">
+            <div className="bg-card/50 backdrop-blur-md rounded-2xl p-12 border border-indian-turmeric/20">
               <p className="text-lg text-muted-foreground">
-                3D interactive reservation system with table preview coming soon...
+                Interactive reservation system with table selection coming soon...
               </p>
             </div>
           </div>
